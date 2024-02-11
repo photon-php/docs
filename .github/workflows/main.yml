@@ -20,5 +20,5 @@ jobs:
       - uses: hydephp/action@master
         with:
           deploy-to: "pages"
-          env-site-name: "'Photon PHP'"
+          env-site-name: "Photon PHP"
           env-torchlight-token: ${{ secrets.TORCHLIGHT_TOKEN }}
