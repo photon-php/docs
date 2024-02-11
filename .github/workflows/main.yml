@@ -18,8 +18,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Move files to docs directory
+        run: mkdir _docs/ && mv ./*.md _docs/
+
       - name: Download main repository readme as index
-        run: curl -s https://raw.githubusercontent.com/photon-php/photon/main/README.md > index.md
+        run: curl -s https://raw.githubusercontent.com/photon-php/photon/main/README.md > _docs/index.md
 
       - uses: hydephp/action@master
         with:

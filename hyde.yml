@@ -1,6 +1,4 @@
 hyde:
-    source_directories:
-        documentation-page: ''
     output_directories:
         documentation-page: ''
     load_app_styles_from_cdn: true
