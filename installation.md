@@ -9,6 +9,8 @@
 <a name="installation"></a>
 ## Installation
 
+> **Note:** In the years since releasing Lumen, PHP has made a variety of wonderful performance improvements. For this reason, along with the availability of [Laravel Octane](https://laravel.com/docs/octane), we no longer recommend that you begin new projects with Lumen. Instead, we recommend always beginning new projects with [Laravel](https://laravel.com).
+
 <a name="server-requirements"></a>
 ### Server Requirements
 
@@ -17,7 +19,7 @@ The Lumen framework has a few system requirements. Of course, all of these requi
 However, if you are not using Homestead, you will need to make sure your server meets the following requirements:
 
 <div class="content-list" markdown="1">
-- PHP >= 7.3
+- PHP >= 8.0
 - OpenSSL PHP Extension
 - PDO PHP Extension
 - Mbstring PHP Extension
