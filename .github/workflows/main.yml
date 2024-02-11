@@ -3,7 +3,7 @@ name: Build and Deploy HydePHP Documentation Site
 on:
   push:
     branches:
-      - main
+      - 8.x
 
 jobs:
   build:
