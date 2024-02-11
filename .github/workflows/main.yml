@@ -22,7 +22,7 @@ jobs:
         run: mkdir _docs/ && mv ./*.md _docs/
 
       - name: Download main repository readme as index
-        run: curl -s https://raw.githubusercontent.com/photon-php/photon/main/README.md > _docs/index.md
+        run: curl -s https://raw.githubusercontent.com/photon-php/photon/10.x/README.md > _docs/index.md
 
       - uses: hydephp/action@master
         with:
