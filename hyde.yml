@@ -8,3 +8,6 @@ docs:
     sidebar:
         header: 'PhotonPHP'
         footer: '[GitHub Source Code](https://github.com/photon-php/photon)'
+
+markdown:
+    prose_classes: "prose dark:prose-invert prose-img:inline"
