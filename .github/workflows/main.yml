@@ -1,0 +1,28 @@
+name: Build and Deploy HydePHP Documentation Site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: https://photon-php.github.io/docs
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Download main repository readme as index
+        run: curl -s https://raw.githubusercontent.com/photon-php/photon/main/README.md > index.md
+
+      - uses: hydephp/action@master
+        with:
+          deploy-to: "pages"
+          env-site-name: "Photon PHP"
+          env-torchlight-token: ${{ secrets.TORCHLIGHT_TOKEN }}
